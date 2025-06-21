@@ -8,60 +8,9 @@
 <meta name="description" content="Affordable painting and paving services in South Africa. Contact A&M Projects and Maintenance for a quote.">
 <meta name="keywords" content="painting, paving, painters, South Africa, maintenance, A&M Projects">
 
-  <title>A&M Projects and Maintenance</title>
-                                                                                                               
-<style>
+  <title>A&M Projects and Maintenance </title>
 
-      /* Dark mode class */
-      body.dark-mode {
-        background-color: #121212;
-          color: #ffffff;
-          }
-
-          /* Toggle switch styling */
-          .theme-switch {
-            position: fixed;
-              top: 1rem;
-                right: 1rem;
-                  display: flex;
-                    align-items: center;
-                      gap: 0.5rem;
-                        font-family: sans-serif;
-                          font-size: 14px;
-                          }
-
-                          .theme-switch input {
-                            display: none;
-                            }
-
-                            .theme-switch .slider {
-                              width: 40px;
-                                height: 20px;
-                                  background-color: #ccc;
-                                    border-radius: 20px;
-                                      position: relative;
-                                        cursor: pointer;
-                                        }
-
-                                        .theme-switch .slider::before {
-                                          content: "";
-                                            position: absolute;
-                                              height: 16px;
-                                                width: 16px;
-                                                  background-color: white;
-                                                    border-radius: 50%;
-                                                      top: 2px;
-                                                        left: 2px;
-                                                          transition: 0.3s;
-                                                          }
-
-                                                          .theme-switch input:checked + .slider::before {
-                                                            transform: translateX(20px);
-                                                            }
-
-                                                            .theme-switch input:checked + .slider {
-                                                              background-color: #666;
-                                                              }
+  <style></style>
 
     body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
     header {
@@ -144,9 +93,7 @@
     <a href="#contact">Contact</a>
   </div>
 </header>
-<div class="mode-toggle">
-    <button id="toggle-theme">Switch to Dark Mode</button>
-  </div>
+a
 
 <section id="home" class="section">
   <div class="section-content">
@@ -188,10 +135,6 @@
       <button type="submit">Send</button>
     </form>
   </div>
-<label class="theme-switch">
-    <input type="checkbox" id="toggle-theme" />
-      <span class="slider"></span> Dark Mode
-      </label>
 
 
 </section>
@@ -201,21 +144,6 @@
   &copy; 2025 A&M Projects and Maintenance. All rights reserved.
 </footer>
 
-<script>
-    const toggle = document.getElementById("toggle-theme");
-      toggle.addEventListener("change", function () {
-          document.body.classList.toggle("dark-mode");       localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
-                });
-
-                  // Load saved theme
-                    window.onload = function () {
-                        const savedTheme = localStorage.getItem("theme");
-                            if (savedTheme === "dark") {
-                                  document.body.classList.add("dark-mode");
-                                        toggle.checked = true;
-                                            }
-                                              };
-                                              </script>
 
 
 
